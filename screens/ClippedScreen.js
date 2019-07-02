@@ -38,7 +38,9 @@ class ClippedScreen extends Component {
   }
 
   onPressItem = (item, index) => {
-    // 
+    this.props.navigation.push('Modal', {
+      url: item.web_url
+    });
   }
 
   onRefresh = () => {
